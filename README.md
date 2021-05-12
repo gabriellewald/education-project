@@ -6,7 +6,6 @@
 Research shows that high-poverty areas disproportionally educate children of color. The chances of ending up in a high-poverty or high-minority school are highly determined by a student’s race/ethnicity and social class. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools.
 
 There is a growing body of evidence that shows increased investment on education returns better outcomes and that the positive effects are even greater among low-income students. On the other hand, it costs more to educate low-income students and provide them with a robust education capable of overcoming their initial disadvantages.
-[link to Google!](http://google.com)
 
 **Goals:**
 
@@ -29,7 +28,6 @@ The dataset for this project is unique. It has been constructed using several da
 
 ## 2. Data Cleaning
 [Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_cleaning.ipynb)
-
 
 
 
