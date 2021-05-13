@@ -77,19 +77,12 @@ An in-depth investigation of income distribution showed:
 Strong linear relationship found between the dependent variable "PERCENTAGE OF STUDENTS PASSING" and the following independent variables:
 
 - Socioeconomic status
-    - As the percentage of students from disadvantaged status increase in schools, the percentage of students passing the standards decrease.
-    - Disadvantaged: negative correlation with the Y var
-    - Not Disadvantaged: positive correlation with the Y var
+    - As the percentage of students from disadvantaged status increase, the percentage of students passing the standards decrease.
 - Ethinicity
     - As the percentage of students self-identifying as Asian increase, the percentage of students passing the standards also increase. The opposite happens for students identifying as Hispanic.
-    - Asian: positive correlation with the Y var
-    - Hispanic: negative correlation with the Y var
 - Parents Education
-    - Parents education also linearly correlate with the percentage of students passing.
-    - < High School: negative correlation with the Y var
-    - High School Grad: negative correlation with the Y var
-    - College Grad: positive correlation with the Y var
-    - Graduate School:positive correlation with the Y var
+    - < High School and High School Grad: As the percentage of students whose parents education falls in this category increases, the number of students passing the standards decrease.
+    - College Grad and Graduate School: As the percentage of students whose parents education falls in this category increases, the number of students passing the standards also increases.
 - Median Household income
     - As median household income increases, so does the percentage of students passing the standards.
 
