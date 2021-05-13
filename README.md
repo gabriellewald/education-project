@@ -21,31 +21,32 @@ The dataset for this project is unique. It has been constructed using several da
 
 - [California Assessment of Student Performance and Progress](https://caaspp-elpac.cde.ca.gov/caaspp/ResearchFileList?ps=true&lstTestYear=2019&lstTestType=B&lstCounty=00&lstDistrict=00000&lstSchool=0000000)
 
-- Extracted data at school level keeping demographic information and percentage of students meeting the standards per school.
-- Two datasets were created, one for language arts and literature and one for mathematics.
-- All the demographic information was contained in one column called subgroup ID, the data was reorganized to contain one feature per column and one observation per row.
-- The final dataset contains number of students per demographic feature.
-- There is one school per row.
+    - Extracted data at school level keeping demographic information and percentage of students meeting the standards per school.
+    - Two datasets were created, one for language arts and literature and one for mathematics.
+    - All the demographic information was contained in one column called subgroup ID, the data was reorganized to contain one feature per column and one observation per row.
+    - The final dataset contains number of students per demographic feature and one school per row.
 
 - [California Median Household Income](http://www.usa.com/rank/california-state--median-household-income--zip-code-rank.htm?yr=9000&dis=&wist=&plow=&phigh=)
 
-- Merged with assessment data via zip code. 
+    - Merged with assessment data via zip code. 
 
 - [Current Expense Per Daily Attendance](https://www.cde.ca.gov/ds/fd/ec/currentexpense.asp)
 
-- Merged with assessment data via district code.
+    - Merged with assessment data via district code.
 
 - [Total Revenue, Total Revenue per Pupil and Total Expenditure](https://nces.ed.gov/ccd/elsi/default.aspx?agree=0)
 
-- Used string manipulation to remove punctuation and capitalize letters in order to merge the data on district name with the assessement dataset.
+    - Used string manipulation to remove punctuation and capitalize letters in order to merge with the assessement dataset via district name.
 
 - [Free or Reduced Price Meals](https://www.cde.ca.gov/ds/sd/sd/fsspfrpm.asp)
 
-- Merged with assessment data via school code.
+    - Merged with assessment data via school code.
 
 
 ## 2. Data Cleaning
 [Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_cleaning.ipynb)
+
+
 
 
 
@@ -55,7 +56,7 @@ The dataset for this project is unique. It has been constructed using several da
 
 
 ## 4. Machine Learning Models
-
+[Pre Processing and Modeling](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
 
 
 ## 5. Predictions
