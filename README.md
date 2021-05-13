@@ -66,14 +66,14 @@ An in-depth investigation of income distribution showed:
     - Parents are much more likely to have completed a four year college or higher.
     - The most common degree achieved by parents in this income bracket is graduate school.
     - The most common ethnicities are White and Asian.
-<img src='images/high-income-zipcodes.jpg' width="600">
+<img src='images/high-income-zipcodes.jpg' width="700">
     
 - LOW INCOME (< 30K)
     - There is a lower percentage of students passing the standards (slight right skewed distribution).
     - Parents are more likely to have completed only high school or be drop-outs.
     - The most common level of education is less than high school or high school graduate.
     - Hispanic is the most common ethinicity in this income bracket.
-<img src='images/low-income-zipcodes.jpg' width="600">
+<img src='images/low-income-zipcodes.jpg' width="700">
 
 **Pairwise relationship:**
 
