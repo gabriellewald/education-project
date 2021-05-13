@@ -38,7 +38,7 @@ The dataset for this project is unique. It has been constructed using several da
 
     - Used string manipulation to remove punctuation and capitalize letters in order to merge with the assessement dataset via district name.
 
-- [Free or Reduced Price Meals](https://www.cde.ca.gov/ds/sd/sd/fsspfrpm.asp)
+- [Free or Reduced Price Meals](https://www.cde.ca.gov/ds/ad/filessp.asp)
 
     - Merged with assessment data via school code.
 
@@ -46,8 +46,11 @@ The dataset for this project is unique. It has been constructed using several da
 ## 2. Data Cleaning
 [Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_cleaning.ipynb)
 
-
-
+- Updated data types to integer, string or float as appropriate.
+- Created dummy columns for features with imputed data in order to signal missing values, adding more weight to original data.
+- Differentiate NaNs from other missing values. 
+- Transformed number of students to percentage of students for the appropriate columns.
+- Imputed the median for a few features with missing values, as appropriate.
 
 
 ## 3. EDA
