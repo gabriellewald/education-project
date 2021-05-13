@@ -42,24 +42,22 @@ The dataset for this project is unique. It has been constructed using several da
 
     - Merged with assessment data via school code.
 
-
 ## 2. Data Cleaning
 [Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_cleaning.ipynb)
 
 - Updated data types to integer, string or float as appropriate.
-- Created dummy columns for features with imputed data in order to signal missing values, adding more weight to original data.
-- Differentiate NaNs from other missing values. 
-- Transformed number of students to percentage of students for the appropriate columns.
+- Created dummy columns to signal missing values, adding more weight to original data.
+- Differentiate NaNs from other missing values. Some analysis showed that NaN was zero; for other missing values -1 was imputed to keep the highest number of observations as possible.
+- Transformed number of students to percentage of students in several feature columns to keep the same format as the response variable.
 - Imputed the median for a few features with missing values, as appropriate.
 
-
 ## 3. EDA
-[Exploratory Data Analysis](https://github.com/gabriellewald/education-project/blob/main/Capstone1_exploratory_data_analysis.ipynb)
+[Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_exploratory_data_analysis.ipynb)
 
 
 
 ## 4. Machine Learning Models
-[Pre Processing and Modeling](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
+[Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
 
 
 ## 5. Predictions
