@@ -81,13 +81,12 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
 
 - Socioeconomic status
     - As the percentage of students from disadvantaged status increase, the percentage of students passing the standards decrease.
-- Ethinicity
-    - As the percentage of students self-identifying as Asian increase, the percentage of students passing the standards also increase. The opposite happens for students identifying as Hispanic.
 - Parents Education
     - < High School and High School Grad: As the percentage of students whose parents education falls in this category increases, the number of students passing the standards decrease.
     - College Grad and Graduate School: As the percentage of students whose parents education falls in this category increases, the number of students passing the standards also increases.
 - Median Household income
     - As median household income increases, so does the percentage of students passing the standards.
+ 
 
 ## 4. Machine Learning Models
 [Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
