@@ -54,7 +54,44 @@ The dataset for this project is unique. It has been constructed using several da
 ## 3. EDA
 [Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_exploratory_data_analysis.ipynb)
 
+**Overall distribution:**
 
+- There is a higher proportion of disadvantaged students across K-12 public schools in CA (left skewed distribution).
+- CA is a minority-majority state with a higher percent of students self-identifying as Hispanic.
+
+An in-depth investigation of income distribution showed:
+
+- HIGH INCOME (> 125k)
+    - There is a higher percentage of students passing the standards (left skewed distribution).
+    - Parents are much more likely to have completed a four year college or higher.
+    - The most common degree achieved by parents in this income bracket is graduate school.
+    - The most common ethnicities are White and Asian.
+- LOW INCOME (< 30K)
+    - There is a lower percentage of students passing the standards (slight right skewed distribution).
+    - Parents are more likely to have completed only high school or be drop-outs.
+    - The most common level of education is less than high school or high school graduate.
+    - Hispanic is the most common ethinicity in this income bracket.
+    
+**Pairwise relationship:**
+
+Strong linear relationship found between the dependent variable "PERCENTAGE OF STUDENTS PASSING" and the following independent variables:
+
+- Socioeconomic status
+    - As the percentage of students from disadvantaged status increase in schools, the percentage of students passing the standards decrease.
+    - Disadvantaged: negative correlation with the Y var
+    - Not Disadvantaged: positive correlation with the Y var
+- Ethinicity
+    - As the percentage of students self-identifying as Asian increase, the percentage of students passing the standards also increase. The opposite happens for students identifying as Hispanic.
+    - Asian: positive correlation with the Y var
+    - Hispanic: negative correlation with the Y var
+- Parents Education
+    - Parents education also linearly correlate with the percentage of students passing.
+    - < High School: negative correlation with the Y var
+    - High School Grad: negative correlation with the Y var
+    - College Grad: positive correlation with the Y var
+    - Graduate School:positive correlation with the Y var
+- Median Household income
+    - As median household income increases, so does the percentage of students passing the standards.
 
 ## 4. Machine Learning Models
 [Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
