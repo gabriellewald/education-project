@@ -91,7 +91,7 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
 ## 4. Machine Learning Models
 [Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
 
->*NOTE: I choose RMSE as the accuracy metric over mean absolute error(MAE) because >the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
+>*NOTE: In RMSE the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
 
 In order to predict the proportion of students passing standards in California K-12 public schools, here I have considered 31 features, either directly from the dataset or engineered/derived from the data. The most important ones in terms of relative importances are parents' level of education, students ethinicity (this might hint cultural and background differences) and socioeconomic status.
 
