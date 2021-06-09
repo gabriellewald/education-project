@@ -107,13 +107,13 @@ Each model is evaluated using several metrics. For this project mean absolute er
 
 Models Comparison
 
-<img src='images/r2-rmse-mae-evaluation' width="800">
+<img src='images/r2-rmse-mae-evaluation.png' width="800">
 
 The best performing model with r-square equal 81.5 was Gradient Boosting, an ensemble method based on decision trees.
 
 Gradient Boosting Feature Importance
 
-<img src='images/gb-feature-importance' width="800">
+<img src='images/gb-feature-importance.png' width="800">
 
 >*NOTE: In RMSE the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
 
