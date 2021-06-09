@@ -106,7 +106,7 @@ Here I have used the following Regression models:
 Each model is evaluated using several metrics. For this project mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) were chosen to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. 
 
 
-<img src='images/r2-rmse-mae-evaluation.png' width="800">
+<img src='images/r2-rmse-mae-evaluation.png' width="600">
 
 Gradient Boosting, an ensemble method based on decision trees, is the best performing model  with r-squared equals to 81.5.
 
