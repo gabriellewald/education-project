@@ -110,8 +110,4 @@ Here I have used the following Regression models:
 
 Evaluating the performance of a model by training and testing on the same dataset can lead to the overfitting. The model evaluation is based on splitting the dataset into train and validation set. But, the performance of the prediction result depends upon the random choice of the pair of train, test set. In order to overcome that, the Cross-Validation procedure is used where under the k-fold CV approach, the training set is split into k smaller sets, where a model is trained using k-1 of the folds as training data and the model is validated on the remaining part.
 
-Each model is evaluated using several metrics, but mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) were chosen to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with a r-square of 81.5 was Gradient Boosting, an ensemble method based on decision treees.
-
-
-## 7. Next Steps
-
+Each model is evaluated using several metrics. For this project mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) were chosen to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with r-square equal 81.5 was Gradient Boosting, an ensemble method based on decision treees.
