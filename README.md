@@ -109,7 +109,7 @@ Models Comparison
 
 <img src='images/r2-rmse-mae-evaluation.png' width="800">
 
-The best performing model with r-square equal 81.5 was Gradient Boosting, an ensemble method based on decision trees.
+Gradient Boosting, an ensemble method based on decision trees, is the best performing model  with r-squared equals to 81.5.
 
 Gradient Boosting Feature Importance
 
