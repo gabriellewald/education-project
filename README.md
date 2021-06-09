@@ -91,8 +91,6 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
 ## 4. Machine Learning Models
 [Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_pre_processing_training.ipynb)
 
->*NOTE: In RMSE the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
-
 In order to predict the proportion of students passing standards in California K-12 public schools, here I have considered 31 features, either directly from the dataset or engineered/derived from the data. The most important ones in terms of relative importances are parents' level of education, students ethinicity (this might hint cultural and background differences) and socioeconomic status.
 
 The response variable is numerical and represents a proportion of the total students per school. Here, this is treated as a Regression problem since the response variable is numerical. Nonetheless, there is no ideal model to predict proportions.
@@ -105,9 +103,22 @@ Here I have used the following Regression models:
 - Random Forest
 - Gradient Boosting
 
+Each model is evaluated using several metrics. For this project mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) were chosen to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. 
+
+Models Comparison
+
+<img src='images/r2-rmse-mae-evaluation' width="800">
+
+The best performing model with r-square equal 81.5 was Gradient Boosting, an ensemble method based on decision trees.
+
+Gradient Boosting Feature Importance
+
+<img src='images/gb-feature-importance' width="800">
+
+>*NOTE: In RMSE the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
+
 
 ## 6. Conclusion
 
 Evaluating the performance of a model by training and testing on the same dataset can lead to the overfitting. The model evaluation is based on splitting the dataset into train and validation set. But, the performance of the prediction result depends upon the random choice of the pair of train, test set. In order to overcome that, the Cross-Validation procedure is used where under the k-fold CV approach, the training set is split into k smaller sets, where a model is trained using k-1 of the folds as training data and the model is validated on the remaining part.
 
-Each model is evaluated using several metrics. For this project mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) were chosen to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with r-square equal 81.5 was Gradient Boosting, an ensemble method based on decision treees.
