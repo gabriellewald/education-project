@@ -3,16 +3,17 @@
 
 # Passing the Standards Projection
 
-Research shows that high-poverty areas disproportionally educate children of color. The chances of ending up in a high-poverty or high-minority school are highly determined by a student’s race/ethnicity and social class. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools.
+Research shows that high-poverty areas disproportionally educate children of color. A student’s race/ethnicity and social class are highly predictive of if they will attend a high-poverty or high-minority school. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools.
 
-There is a growing body of evidence that shows increased investment on education returns better outcomes and that the positive effects are even greater among low-income students. On the other hand, it costs more to educate low-income students and provide them with a robust education capable of overcoming their initial disadvantages. This investigation proposes to understand what other factors play important roles in student performance.
+There is a growing body of evidence that shows that increased investment in education leads to better outcomes and that the positive effects are even larger among low-income students. On the other hand, it costs more to educate low-income students and provide them with a robust education capable of overcoming their initial disadvantages. This investigation seeks to understand what other factors are associated with student performance by comparing the percentage of students in each school who pass standardized tests.
 
 **Goals:**
 
 - Understand the current demographics of wealthy to high-poverty schools across the state of California.
 - Identify how much funding is available per pupil in wealthy vs high-poverty areas.
-- Learn what factors are most correlated with student performance.
+- Learn what factors are most correlated with student performance (pass rate).
 - Create a predictive model to find the percentage of students passing the standards per school.
+
 
 # The Process
 ## 1. Data
