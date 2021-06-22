@@ -3,9 +3,9 @@
 
 # Predicting Test Performance in California Public Schools
 
-Research shows that high-poverty areas disproportionally educate children of color. A student’s race/ethnicity and social class are highly predictive of if they will attend a high-poverty or high-minority school. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools.
+**Problem Statement:**
 
-There is a growing body of evidence that shows that increased investment in education leads to better outcomes and that the positive effects are even larger among low-income students. On the other hand, it costs more to educate low-income students and provide them with a robust education capable of overcoming their initial disadvantages. This investigation seeks to understand what other factors are associated with student performance by comparing the percentage of students in each school who pass standardized tests.
+Research shows that high-poverty areas disproportionally educate children of color. A student’s race/ethnicity and social class are highly predictive of whether they will attend a high-poverty or high-minority school. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools. There is a growing body of evidence that shows that increased investment in education leads to better outcomes and that the positive effects are even larger among low-income students. On the other hand, it costs more to educate low-income students and provide them with a robust education capable of overcoming their initial disadvantages. There is a strong need to find more informed and granular causes that impact test achievement in schools. This investigation seeks to understand what other factors are associated with student performance and ultimately predict the proportion of students in each school who pass standardized tests.
 
 **Goals:**
 
