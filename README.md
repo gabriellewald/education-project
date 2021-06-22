@@ -1,7 +1,7 @@
 <img src='images/education_image.jpg' width="900">
 
 
-# Passing the Standards Projection
+# Predicting Test Performance in California Public Schools
 
 Research shows that high-poverty areas disproportionally educate children of color. A student’s race/ethnicity and social class are highly predictive of if they will attend a high-poverty or high-minority school. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools.
 
