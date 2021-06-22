@@ -19,7 +19,7 @@ Research shows that high-poverty areas disproportionally educate children of col
 - Department of education/ federal government to gain insights and potentially innovate adult (parents) education.
 - School administrators and policy makers to effectively identify schools that need more support. Resources can be allocated in order to address tutoring needs, mentoring, and extracurricular activities.
 - Teachers can be oriented to provide more support for under-performing groups and reduce achievement gaps.
-- From a parents perspective, the results can be used to select a high performing school that meets academic standards
+- From a parents perspective, the results can be used to select a high performing school that meets academic standards.
 
 
 
