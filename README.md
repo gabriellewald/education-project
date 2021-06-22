@@ -14,6 +14,14 @@ Research shows that high-poverty areas disproportionally educate children of col
 - Learn what factors are most correlated with student performance (pass rate).
 - Create a predictive model to find the proportion of students passing standard tests per school.
 
+**Beneficiaries:**
+
+- Department of education/ federal government to gain insights and potentially innovate adult (parents) education.
+- School administrators and policy makers to effectively identify schools that need more support. Resources can be allocated in order to address tutoring needs, mentoring, and extracurricular activities.
+- Teachers can be oriented to provide more support for under-performing groups and reduce achievement gaps.
+- From a parents perspective, the results can be used to select a high performing school that meets academic standards
+
+
 
 # The Process
 ## 1. Data
