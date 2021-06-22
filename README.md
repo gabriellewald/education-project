@@ -127,6 +127,10 @@ Gradient Boosting Feature Importance:
 >*NOTE: In RMSE the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
 
 
-Evaluating the performance of a model by training and testing on the same dataset can lead to the overfitting. The model evaluation is based on splitting the dataset into train and validation set. But, the performance of the prediction result depends upon the random choice of the pair of train, test set. In order to overcome that, the Cross-Validation procedure is used where under the k-fold CV approach, the training set is split into k smaller sets, where a model is trained using k-1 of the folds as training data and the model is validated on the remaining part.
+In order to predict the proportion of students passing standards in California K-12 public schools, I have considered 31 features, either directly from the dataset or engineered from the data. The most relevant features in terms of relative importances are parents' level of education, socioeconomic status, and students ethinicity followed by other demographics.
+
+The response variable is numerical and represents a proportion of the total students per school. Here, this is treated as a Regression problem since the response variable is numerical. It's important to mention that there is no ideal model to predict proportions. Nonetheless, the predictions fall well into the range 0 to 1 and the metrics show well performing models. It's a good start, these can be further improved with the addition of new features.
+
+Remembering the models used were Linear Regression, LASSO, Decision (Regression) Tree, Random Forest, and Gradient Boosting. Each model is evaluated using mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with r-square = 0.815 is the Gradient Boosting.
 
 
