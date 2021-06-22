@@ -12,7 +12,7 @@ There is a growing body of evidence that shows that increased investment in educ
 - Understand the current demographics of wealthy to high-poverty schools across the state of California.
 - Identify how much funding is available per pupil in wealthy vs high-poverty areas.
 - Learn what factors are most correlated with student performance (pass rate).
-- Create a predictive model to find the percentage of students passing the standards per school.
+- Create a predictive model to find the proportion of students passing standard tests per school.
 
 
 # The Process
