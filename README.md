@@ -24,7 +24,7 @@ Research shows that high-poverty areas disproportionally educate children of col
 
 
 # Process
-## 1. Data
+## 1. Data Acquisition
 [Data Wrangling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_wrangling.ipynb)
 
 The dataset for this project is unique. It has been constructed using several datasets from the California Department of Education and the National Center of Education Statistics. It concerns with California K-12 public education for the academic year of 2018-2019.
