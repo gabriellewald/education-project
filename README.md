@@ -25,32 +25,27 @@ Research shows that high-poverty areas disproportionally educate children of col
 
 # Process
 ## 1. Data Acquisition
-[Data Wrangling Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_wrangling.ipynb)
+[Data Wrangling Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/1_data_wrangling.ipynb)
 
 The dataset for this project is unique. It has been constructed using several datasets from the California Department of Education and the National Center of Education Statistics. It concerns with California K-12 public education for the academic year of 2018-2019.
 
-- [California Assessment of Student Performance and Progress](https://caaspp-elpac.cde.ca.gov/caaspp/ResearchFileList?ps=true&lstTestYear=2019&lstTestType=B&lstCounty=00&lstDistrict=00000&lstSchool=0000000)
-
+- California Assessment of Student Performance and Progress (CAASPP)
     - Extracted data at school level keeping demographic information and percentage of students meeting the standards per school.
     - Two datasets were created, one for language arts and literature and one for mathematics.
     - All the demographic information was contained in one column called subgroup ID, the data was reorganized to contain one feature per column and one observation per row.
     - The final dataset contains number of students per demographic feature and one school per row.
 
-- [California Median Household Income](http://www.usa.com/rank/california-state--median-household-income--zip-code-rank.htm?yr=9000&dis=&wist=&plow=&phigh=)
+- California Departament of Education
+    - Current expense per daily attendance merged with assessment data via district code.
+    - Free or Reduced Price Meals
+    - Merged with assessment data via school code.
 
-    - Merged with assessment data via zip code. 
-
-- [Current Expense Per Daily Attendance](https://www.cde.ca.gov/ds/fd/ec/currentexpense.asp)
-
-    - Merged with assessment data via district code.
-
-- [Total Revenue, Total Revenue per Pupil and Total Expenditure](https://nces.ed.gov/ccd/elsi/default.aspx?agree=0)
-
+- National Center for Educational Statistics
+    - Total Revenue, Total Revenue per Pupil and Total Expenditure
     - Used string manipulation to remove punctuation and capitalize letters in order to merge with the assessement dataset via district name.
 
-- [Free or Reduced Price Meals](https://www.cde.ca.gov/ds/ad/filessp.asp)
-
-    - Merged with assessment data via school code.
+- California Median Household Income
+    - Merged with assessment data via zip code. 
 
 ## 2. Data Cleaning
 [Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_cleaning.ipynb)
