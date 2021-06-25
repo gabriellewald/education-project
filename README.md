@@ -57,7 +57,7 @@ The dataset for this project is unique. It has been constructed using several da
 - Imputed the median for a few features with missing values, as appropriate.
 
 ## 3. EDA
-[Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_exploratory_data_analysis.ipynb)
+[Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/3_exploratory_data_analysis.ipynb)
 
 **Overall distribution:**
 
