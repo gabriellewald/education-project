@@ -48,7 +48,7 @@ The dataset for this project is unique. It has been constructed using several da
     - Merged with assessment data via zip code. 
 
 ## 2. Data Cleaning
-[Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/Capstone1_data_cleaning.ipynb)
+[Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/2_data_cleaning.ipynb)
 
 - Updated data types to integer, string or float as appropriate.
 - Created dummy columns to signal missing values, adding more weight to original data.
