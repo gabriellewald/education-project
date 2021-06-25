@@ -94,7 +94,7 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
  
 
 ## 4. Machine Learning Models
-[Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/4_hypotheses_testing.ipynb)
+[Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/5_pre_processing_modeling.ipynb)
 
 In order to predict the proportion of students passing standards in California K-12 public schools, I have considered 31 features, either directly from the dataset or engineered/derived from the data. The most important ones in terms of relative importances are parents' level of education, students ethinicity (this might hint cultural and background differences) and socioeconomic status.
 
