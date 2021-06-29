@@ -60,24 +60,27 @@ The data is explored to find trends, insights, and potential outliers based on v
 - There is a higher proportion of disadvantaged students across K-12 public schools in CA (left skewed distribution).
 - CA is a minority-majority state with a higher percent of students self-identified as Hispanic.
 
-**Income, education, and ethnicity**
+**Income, Education & Ethnicity**
 
 - HIGH INCOME (> 125k)
     - There is a higher percentage of students passing the standards (left skewed distribution).
     - The most common degree achieved by parents in this income bracket is graduate school.
     - The most common ethnicities are White and Asian.
-  
+ 
+<p align="center">
 <img src='images/high-parents-education.png' width="500"> 
 <img src='images/high-ethinicity-distribution.png' width="500">
-
+</p>
     
 - LOW INCOME (< 30K)
     - There is a lower percentage of students passing the standards (slight right skewed distribution).
     - The most common level of education for parents in this income bracket is less than high school.
     - Hispanic is the most common ethinicity.
-
+   
+<p align="center">
 <img src='images/low-parents-education.png' width="500">
 <img src='images/low-ethnicity-distribution.png' width="500">
+</p>
 
 **Pairwise relationship:**
 
@@ -90,7 +93,16 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
     - College Grad and Graduate School: As the percentage of students whose parents education falls in this category increases, the number of students passing the standards also increases.
 - Median Household income
     - As median household income increases, so does the percentage of students passing the standards.
+
+**Highly Correlated Independent Variables:**
  
+ - High positive correlation between Hispanic and Disadvantaged, and Hispanic and High School Graduate.
+ - High positive correlation between Asian and Not Disadvantaged, and Asian and Graduate Level education.
+ - Higher education is positively correlated with median household income.
+
+<p align="center">
+<img src='images/scatter-independent-vars.png' width="700">
+</p>
 
 ## 4. Machine Learning Models
 [Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/5_pre_processing_modeling.ipynb)
