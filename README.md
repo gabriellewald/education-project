@@ -52,26 +52,32 @@ The dataset for this project is unique. It has been constructed using several pu
 ## 3. EDA
 [Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/3_exploratory_data_analysis.ipynb)
 
-**Overall distribution:**
+The data is explored to find trends, insights, and potential outliers based on visualization and hypothesis testing. These graphs and figures are important communication tools for collaborating in data science teams or presenting to business-oriented customers. The libraries used were matplotlib, seaborn, and pandas. 
+
+
+**Distribution:**
 
 - There is a higher proportion of disadvantaged students across K-12 public schools in CA (left skewed distribution).
-- CA is a minority-majority state with a higher percent of students self-identifying as Hispanic.
+- CA is a minority-majority state with a higher percent of students self-identified as Hispanic.
 
-An in-depth investigation of income distribution showed:
+**Income, education, and ethnicity**
 
 - HIGH INCOME (> 125k)
     - There is a higher percentage of students passing the standards (left skewed distribution).
-    - Parents are much more likely to have completed a four year college or higher.
     - The most common degree achieved by parents in this income bracket is graduate school.
     - The most common ethnicities are White and Asian.
-<img src='images/high-income-zipcodes.jpg' width="900">
+  
+<img src='images/high-parents-education.png' width="500"> 
+<img src='images/high-ethinicity-distribution.png' width="500">
+
     
 - LOW INCOME (< 30K)
     - There is a lower percentage of students passing the standards (slight right skewed distribution).
-    - Parents are more likely to have completed only high school or be drop-outs.
-    - The most common level of education is less than high school or high school graduate.
-    - Hispanic is the most common ethinicity in this income bracket.
-<img src='images/low-income-zipcodes.jpg' width="900">
+    - The most common level of education for parents in this income bracket is less than high school.
+    - Hispanic is the most common ethinicity.
+
+<img src='images/low-parents-education.png' width="500">
+<img src='images/low-ethnicity-distribution.png' width="500">
 
 **Pairwise relationship:**
 
@@ -122,3 +128,5 @@ The response variable is numerical and represents a proportion of the total stud
 Remembering the models used were Linear Regression, LASSO, Decision (Regression) Tree, Random Forest, and Gradient Boosting. Each model is evaluated using mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with r-square = 0.815 is the Gradient Boosting.
 
 
+
+**Special thanks to my mentor Nadav, who has been a great support and genuinely involved with the outcome of this project.**
