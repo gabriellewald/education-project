@@ -136,6 +136,9 @@ Gradient Boosting Feature Importance:
 
 It is clear that high scores are strongly correlated with students raised by highly educated families. And, there is also a strong correlation between education level and higher household income. As a result, students in highly educated families are exposed to various learning opportunities including sports, traveling, musical instruments, arts, tutoring or other enriching activities. Their parents are also better equipped academically to help with homework and school assignments.
 
+For more details and recommendation:
+[Full Report](https://github.com/gabriellewald/education-project/blob/main/education-project-report.pdf)
+
 
 ## Thank you note:
 **Special thanks to my mentor Nadav, who has been a great support and genuinely involved with the outcome of this project.**
