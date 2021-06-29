@@ -3,58 +3,51 @@
 
 # Predicting Test Performance in California Public Schools
 
+### In-depth investigation of factors associated with student test performance
+
 **Problem Statement:**
 
 Research shows that high-poverty areas disproportionally educate children of color. A student’s race/ethnicity and social class are highly predictive of whether they will attend a high-poverty or high-minority school. For instance, African American and Hispanic students—even if they are not poor—are much more likely than White or Asian students to be in high-poverty schools. There is a growing body of evidence that shows that increased investment in education leads to better outcomes and that the positive effects are even larger among low-income students. On the other hand, it costs more to educate low-income students and provide them with a robust education capable of overcoming their initial disadvantages. There is a strong need to find more informed and granular causes that impact test achievement in schools. This investigation seeks to understand what other factors are associated with student performance and ultimately predict the proportion of students in each school that pass standardized tests.
 
-**Goals:**
+**Objectives:**
 
 - Understand the current demographics of wealthy to high-poverty schools across the state of California.
-- Identify how much funding is available per pupil in wealthy vs high-poverty areas.
 - Learn what factors are most correlated with student performance (pass rate).
 - Create a predictive model to find the proportion of students passing standard tests per school.
 
 **Beneficiaries:**
 
-- Department of education/ federal government to gain insights and potentially innovate adult (parents) education.
 - School administrators and policy makers to effectively identify schools that need more support and allocate resources to address tutoring needs, mentoring, and extracurricular activities.
 - Teachers can be oriented to provide more support for under-performing groups and reduce achievement gaps.
 - From a parents perspective, the results can be used to select a high performing school that meets academic standards.
+- Department of education/ federal government to gain insights and potentially innovate adult (parents) education.
 
-
-
-# Process
 ## 1. Data Acquisition
 [Data Wrangling Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/1_data_wrangling.ipynb)
 
-The dataset for this project is unique. It has been constructed using several datasets from the California Department of Education and the National Center of Education Statistics. It concerns with California K-12 public education for the academic year of 2018-2019.
+The dataset for this project is unique. It has been constructed using several publicly available data files regarding the academic year of 2018-2019. The files come from the California Assessment of Student and Progress (CAASPP), California Department of Education (CDE), and the National Center of Education Statistics (NCES). The assessment data refers to the Smarter Balanced Summative Assessment, a standardized test applied yearly to K-12 students of public schools in California. It contains student demographic information, and the response variable of interest (number of students who meet the standards per school). The other datasets include variables such as current expense per daily attendance, number of students per school receiving free or reduced price meals, total revenue and expenditure per pupil, and median household income per zip code.
 
 - California Assessment of Student Performance and Progress (CAASPP)
-    - Extracted data at school level keeping demographic information and percentage of students meeting the standards per school.
-    - Two datasets were created, one for language arts and literature and one for mathematics.
-    - All the demographic information was contained in one column called subgroup ID, the data was reorganized to contain one feature per column and one observation per row.
-    - The final dataset contains number of students per demographic feature and one school per row.
+    - Extracted data at school level keeping demographic information and percentage of students meeting the standards per school (response or target variable).
+    - All the demographic information was contained in one column called subgroup ID, this data was remapped to create one feature per column.
 
-- California Departament of Education
+- California Departament of Education (CDE)
     - Current expense per daily attendance merged with assessment data via district code.
-    - Free or Reduced Price Meals
-    - Merged with assessment data via school code.
 
-- National Center for Educational Statistics
-    - Total Revenue, Total Revenue per Pupil and Total Expenditure
-    - Used string manipulation to remove punctuation and capitalize letters in order to merge with the assessement dataset via district name.
+- National Center for Educational Statistics (NCES)
+    - Total Revenue and Total Expenditure per pupil.
+    - Used string manipulation to remove punctuation and capitalize letters in order to merge to the assessement dataset via district name.
 
 - California Median Household Income
-    - Merged with assessment data via zip code. 
+    - Merged with assessment data via zip code.
 
 ## 2. Data Cleaning
 [Data Cleaning Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/2_data_cleaning.ipynb)
 
+- Imputed missing values with the median or zero as appropriate.
+- Created dummy columns to signal missing values.
 - Updated data types to integer, string or float as appropriate.
-- Created dummy columns to signal missing values, adding more weight to original data.
-- Differentiate NaNs from other missing values. Some analysis showed that NaN was zero; for other missing values -1 was imputed to keep the highest number of observations as possible.
 - Transformed number of students to percentage of students in several feature columns to keep the same format as the response variable.
-- Imputed the median for a few features with missing values, as appropriate.
 
 ## 3. EDA
 [Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/3_exploratory_data_analysis.ipynb)
