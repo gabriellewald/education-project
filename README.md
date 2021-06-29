@@ -143,4 +143,4 @@ For more details and recommendation:
 
 
 ## Thank you note:
-**Special thanks to my mentor Nadav, who has been a great support and genuinely involved with the outcome of this project.**
+**Special thanks to my mentor [Nadav](https://github.com/nrindler), who has been a great support and genuinely involved with the outcome of this project.**
