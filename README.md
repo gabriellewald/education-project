@@ -49,8 +49,10 @@ The dataset for this project is unique. It has been constructed using several pu
 - Updated data types to integer, string or float as appropriate.
 - Transformed number of students to percentage of students in several feature columns to keep the same format as the response variable.
 
-## 3. EDA
+## 3. Exploratory Data Analysis
 [Exploratory Data Analysis Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/3_exploratory_data_analysis.ipynb)
+
+[Hypothesis Testing Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/4_hypotheses_testing.ipynb)
 
 The data is explored to find trends, insights, and potential outliers based on visualization and hypothesis testing. These graphs and figures are important communication tools for collaborating in data science teams or presenting to business-oriented customers. The libraries used were matplotlib, seaborn, and pandas. 
 
