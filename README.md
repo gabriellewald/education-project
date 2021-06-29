@@ -82,10 +82,7 @@ The data is explored to find trends, insights, and potential outliers based on v
 <img src='images/low-ethnicity-distribution.png' width="500">
 </p>
 
-**Pairwise relationship:**
-
-Strong linear relationship found between the dependent variable "PERCENTAGE OF STUDENTS PASSING" and the following independent variables:
-
+**High Correlation between Dependent and Independent Variables:**
 - Socioeconomic status
     - As the percentage of students from disadvantaged status increase, the percentage of students passing the standards decrease.
 - Parents Education
@@ -94,8 +91,7 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
 - Median Household income
     - As median household income increases, so does the percentage of students passing the standards.
 
-**Highly Correlated Independent Variables:**
- 
+**High Correlation between Independent Variables:**
  - High positive correlation between Hispanic and Disadvantaged, and Hispanic and High School Graduate.
  - High positive correlation between Asian and Not Disadvantaged, and Asian and Graduate Level education.
  - Higher education is positively correlated with median household income.
@@ -107,38 +103,35 @@ Strong linear relationship found between the dependent variable "PERCENTAGE OF S
 ## 4. Machine Learning Models
 [Pre Processing and Modeling Report](https://github.com/gabriellewald/education-project/blob/main/notebooks/5_pre_processing_modeling.ipynb)
 
-In order to predict the proportion of students passing standards in California K-12 public schools, I have considered 31 features, either directly from the dataset or engineered/derived from the data. The most important ones in terms of relative importances are parents' level of education, students ethinicity (this might hint cultural and background differences) and socioeconomic status.
+**Evaluation Metrics: MAE, RMSE, and R2**
+- Mean Absolute Error (MAE): MAE is the mean of the absolute value of the errors.
+- Root Mean Squared Error (RMSE): RMSE is the square root of the mean of the squared errors.
+- R2: R2 is the number that indicates the proportion of the variance in the dependent variable that is predictable from the independent variables. R2 represents how accurate the model is. It shows how well data points fit a curve or line. 
 
-The response variable is numerical and represents a proportion of the total students per school. Here, this is treated as a Regression problem since the response variable is numerical. Nonetheless, there is no ideal model to predict proportions.
-
-Here I have used the following Regression models:
-
-- Linear Regression
-- LASSO
-- Decision (Regression) Tree
-- Random Forest
-- Gradient Boosting
-
-Each model is evaluated using several metrics. For this project mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) were chosen to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. 
-
-
-<img src='images/r2-rmse-mae-evaluation.png' width="600">
-
-Gradient Boosting, an ensemble method based on decision trees, is the best performing model  with r-squared equals to 81.5.
+In order to predict the proportion of students passing standards in California K-12 public schools 31 features were considered, either directly from the dataset or engineered from the data. The most relevant features in terms of relative importances are parents' level of education, socioeconomic status, and students' ethnicity followed by other demographics. To measure model accuracy R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with R2 = 0.815 is the Gradient Boosting.
 
 Gradient Boosting Feature Importance:
+<p align="center">
+<img src='images/gb-features.png' width="600">
+</p>
 
-<img src='images/gb-feature-importance.png' width="800">
+**Regression models applied here:**
+- Linear Regression: MAE: 0.08, RMSE: 0.104 and R2 score: 0.7403.
+- LASSO: MAE: 0.08, RMSE: 0.107 and R2 score: 0.7422.
+- Decision (Regression) Tree: MAE: 0.085, RMSE: 0.111 and R2 score: 0.699.
+- Random Forest: MAE: 0.07, RMSE: 0.092 and R2 score: 0.797
+- Gradient Boosting: MAE: 0.067, RMSE: 0.087 and R2 score: 0.815.
 
->*NOTE: In RMSE the errors are squared before they are averaged giving the RMSE a higher weight to >large errors. Thus, the RMSE is useful when large errors are undesirable. The >smaller the RMSE, the more accurate the prediction because the RMSE takes the square >root of the residual errors of the line of best fit.*
+<p align="center">
+<img src='images/evaluation-metrics.png' width="500">
+</p>
 
+## 5. Conclusion
 
-In order to predict the proportion of students passing standards in California K-12 public schools, I have considered 31 features, either directly from the dataset or engineered from the data. The most relevant features in terms of relative importances are parents' level of education, socioeconomic status, and students ethinicity followed by other demographics.
-
-The response variable is numerical and represents a proportion of the total students per school. Here, this is treated as a Regression problem since the response variable is numerical. It's important to mention that there is no ideal model to predict proportions. Nonetheless, the predictions fall well into the range 0 to 1 and the metrics show well performing models. It's a good start, these can be further improved with the addition of new features.
-
-Remembering the models used were Linear Regression, LASSO, Decision (Regression) Tree, Random Forest, and Gradient Boosting. Each model is evaluated using mean absolute error (MAE), root-mean square error (RMSE) and R-squared (R2) to measure model accuracy. R2 was plotted for test data, and MAE and RMSE were plotted for training and test data. The best performing model with r-square = 0.815 is the Gradient Boosting.
-
-
+- The higher the level of parental education, the higher the achievement of students.
+- Female students exceed male students in English language arts test performance.
+- Economically disadvantaged students have more difficulties than not-economically disadvantaged students.
+- Students fluent in English achieve higher performance, while English learners score lower. 
+- Asian students achieve higher performance, while Hispanic students score lower.
 
 **Special thanks to my mentor Nadav, who has been a great support and genuinely involved with the outcome of this project.**
