@@ -134,4 +134,5 @@ Gradient Boosting Feature Importance:
 - Students fluent in English achieve higher performance, while English learners score lower. 
 - Asian students achieve higher performance, while Hispanic students score lower.
 
+## Thank you note
 **Special thanks to my mentor Nadav, who has been a great support and genuinely involved with the outcome of this project.**
