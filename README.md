@@ -134,7 +134,6 @@ Gradient Boosting Feature Importance:
 - Female students exceed male students in English language arts test performance.
 - Economically disadvantaged students have more difficulties than not-economically disadvantaged students.
 - Students fluent in English achieve higher performance, while English learners score lower. 
-- Asian students achieve higher performance, while Hispanic students score lower.
 
 It is clear that high scores are strongly correlated with students raised by highly educated families. And, there is also a strong correlation between education level and higher household income. As a result, students in highly educated families are exposed to various learning opportunities including sports, traveling, musical instruments, arts, tutoring or other enriching activities. Their parents are also better equipped academically to help with homework and school assignments.
 
